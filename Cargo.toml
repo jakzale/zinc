@@ -54,12 +54,6 @@ exclude = [
     "zargo",
     "zandbox",
 
-    "zinc-logger",
-    "zinc-const",
-    "zinc-math",
-    "zinc-manifest",
-    "zinc-source",
-    "zinc-build",
     "zinc-zksync",
 
     "zksync"
