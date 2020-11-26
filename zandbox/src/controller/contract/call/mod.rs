@@ -220,7 +220,7 @@ pub async fn handle(
                         Some(transaction.ethereum_signature.signature),
                     )
                 })
-                .collect(),
+                .collect(), Option::default()
         )
         .await?
         .into_iter()

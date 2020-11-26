@@ -46,15 +46,46 @@ members = [
     # - zinc-source
     # - zinc-build
     "zinc-compiler",
+
+    # depends on:
+    # - zinc-const
+    # - zinc-math
+    # - zinc-build
+    "zinc-zksync",
+
+    # depends on:
+    # - zinc-const
+    # - zinc-math
+    # - zinc-logger
+    # - zinc-build
+    # - zinc-zksync
+    "zinc-vm",
+    
+    # depends on:
+    # - zinc-const
+    # - zinc-manifest
+    # - zinc-build
+    # - zinc-compiler
+    # - zinc-zksync
+    # - zinc-vm
+    "zinc-tester",
+
+    # depends on:
+    # - zinc-math
+    # - zinc-manifest
+    # - zinc-logger
+    # - zinc-zksync
+    "zargo",
+
+    # depends on:
+    # - const
+    # - math
+    # - logger
+    # - build
+    # - zksync
+    # - vm
+    "zandbox",
 ]
 
 exclude = [
-    "zinc-tester",
-    "zinc-vm",
-    "zargo",
-    "zandbox",
-
-    "zinc-zksync",
-
-    "zksync"
 ]
