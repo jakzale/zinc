@@ -1,11 +1,54 @@
 [workspace]
 members = [
+    # Members, topologically sorted
+    
+    # no dependencies
+    "zinc-const",
+
+    # depends on:
+    # - zinc-const
+    "zinc-math",
+
+    # depends on:
+    # - zinc-const
+    # - zinc-math
     "zinc-lexical",
+    
+    # depends on:
+    # - zink-const
+    # - zink-lexical
     "zinc-syntax",
+
+    # depends on:
+    # - zink-const
+    "zinc-manifest",
+
+    # depends on:
+    # - zinc-const
+    "zinc-logger",
+
+    # depends on:
+    # - zinc-const
+    "zinc-source",
+
+    # depends on:
+    # - zinc-const
+    # - zinc-math
+    "zinc-build",
+
+    # depends on:
+    # - zinc-const
+    # - zinc-math
+    # - zinc-lexical
+    # - zinc-syntax
+    # - zinc-manifest
+    # - zinc-logger
+    # - zinc-source
+    # - zinc-build
+    "zinc-compiler",
 ]
 
 exclude = [
-    "zinc-compiler",
     "zinc-tester",
     "zinc-vm",
     "zargo",
