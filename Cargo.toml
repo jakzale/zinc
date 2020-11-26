@@ -2,8 +2,10 @@
 members = [
     "zinc-lexical",
     "zinc-syntax",
-    "zinc-compiler",
+]
 
+exclude = [
+    "zinc-compiler",
     "zinc-tester",
     "zinc-vm",
     "zargo",
@@ -16,8 +18,6 @@ members = [
     "zinc-source",
     "zinc-build",
     "zinc-zksync",
-]
 
-exclude = [
     "zksync"
 ]
